@@ -1,25 +1,7 @@
-# CS4277/CS5477: Structure from Motion and Bundle Adjustment
+作业4的内容见压缩包zuoye4.7z，包括三个部分：
 
-## Setting Up
+第一个是code文件夹，里面包含了填充后的三个python文件:zuoye4_bundle_adjustment.py,zuoye4_preprocess,zuoye4_sfm
 
-If you are using Anaconda, you can run the following lines to setup:
-```bash
-conda create -n sfm python==3.7.6
-conda activate sfm
-pip  install -r requirements.txt
-```
+第二个文件是predictions文件
 
-## Running Scripts
-To run the scripts:
-```bash
-python preprocess.py --dataset temple  # performs preprocessing for temple dataset
-python preprocess.py --dataset mini-temple  # performs preprocessing for mini-temple dataset
-python sfm.py --dataset temple # performs structure from motion without bundle adjustment 
-python sfm.py --dataset mini-temple --ba # performs structure from motion with bundle adjustment on mini-temple dataset
-python sfm.py --dataset mini-temple # performs structure from motion without bundle adjustment on mini-temple dataset
-```
-
-To visualize, run:
-```bash
-python visualize.py --dataset mini-temple  # visualize 3d point cloud from reconstruction.
-```
+第三个是Report
